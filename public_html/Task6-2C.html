@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- You will need to create this new JS file and place it in
+    the same directory as this HTML file (i.e., public_html) -->
+    <script src="Js/icecreamRatings.js"></script>
+
+    <title>Ice Cream Ratings Page</title>
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid bg-info-subtle mb-4">
+            <div class="col-sm-8 mx-auto text-center py-2">
+                <h1 class="display-4">World of Ice Cream</h1>
+                <p class="lead ">Provide your rating on your recent Ice Cream experience</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h3>Javascript Loops and Functions</h3>
+            <p>
+                A web pages can be a great way of getting feedback from users.
+                Here, we are asking the user for their name and a rating on 
+                a recent <em>Ice Cream tasting experience</em> they have had. 
+                After inputting their name, the use gives how many <em>stars</em>
+                out of <strong>5</strong> they would like to give. This is then
+                recorded and added to a list of previous results.
+            </p>
+            <p>
+                <strong>NOTE:</strong> The use should only be able to input a number between 0 and 5,
+                with an error being displayed if it is outside these bounds.
+            </p>
+
+            <h3>Input Fields</h3>
+            <div class="row">
+
+                <div class="col-6">
+                    <div class="mb-3">
+                        <label for="nameInput" class="form-label">Name:</label>
+                        <input type="text" class="form-control" id="nameInput">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="mb-3">
+                        <label for="ratingInput" class="form-label">Star rating (between 0 and 5):</label>
+                        <input type="number" class="form-control" id="ratingInput"
+                            min="0" max="5">
+                    </div>
+                </div>
+            </div>
+
+            <input class="btn btn-primary" type="button" onclick="submitRating()"
+            value="Submit a Ice Cream Rating">
+
+            <div class="row mt-4">
+
+                <div class="col-10 mx-auto bg-info-subtle pt-2">
+                    <p>
+                        Ratings list last updated on <span id="last-updated-date">23/03/2024</span> at <span id="last-updated-time">14:26:17</span>:
+                    </p>
+
+                    <div id="ratings">
+                        <ul id="ratingsList">
+                            <li>
+                                [23/03/2024 14:26:17] <strong>Mick Hobbs</strong> gave a rating of &#x2605;&#x2605;&#x2605;&#x2606;&#x2606;
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- <p>
+                Here are the <strong>Top 10 Ice Cream Flavours</strong>:
+            </p> -->
+
+            <!-- This is the block of the webpage that is to be updated dynamically -->
+            <!-- <table class="table table-borderless table-sm">
+                <thead class="table-dark">
+                    <th>Line #</th><th>Verse #</th><th>Verse Text</th>
+                </thead>
+                <tbody id="verse-body">
+
+                </tbody>
+            </table>
+
+            <p>
+                Use the button below to call the javascript function
+                that creates the <em>Top-10 Ice Cream List</em> and displays it above.
+            </p> -->
+
+
+
+            <!-- This is the Button that handles the `onlcick` event and
+                calls the javascript function `buildIcecreamList()` located in
+                the file `icecreamList.js` -->
+            <!-- <input class="btn btn-primary" type="button" onclick="buildIcecreamPoem(4, 29)"
+                value="Create and Display Top 10 Ice Cream List"> -->
+            <!-- <input class="btn btn-primary" type="button" onclick="removeIcecreamList()"
+                value="Reset List"> -->
+
+        </div>
+    </main>
+
+
+    <footer class="container-fluid text-center mt-4 p-2 bg-dark text-white">
+        <p>&copy; 2024 Ice Cream made chilled!</p>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

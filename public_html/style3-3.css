@@ -1,0 +1,108 @@
+/* General page styling */
+html {
+  font-family: 'Righteous', Garamond, Georgia, sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+  background-image: url('images/sean-oulashin-KMn4VEeEPR8-unsplash.jpg');
+  background-repeat: repeat-x;
+  background-position: center;
+}
+
+body {
+  background-color: rgb(241, 255, 179);
+}
+
+/* Header */
+.site-header {
+  font-family: 'Orbitron', Tahoma, Verdana, sans-serif;
+  /*background-color: mediumseagreen;*/
+  color: white;
+  padding: 1.1rem;
+  text-align: center;
+  letter-spacing: 0.2em;
+}
+
+/* Navigation */
+nav {
+  margin: 1.5em;
+  font-family: 'Philosopher', Verdana, Tahoma, sans-serif;
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #0682b1;
+  padding: 0.5em;
+  border: 1px solid black;
+}
+
+nav a:hover {
+  color: #0682b1;
+  background-color: #ffffff;
+  border: 1px solid #0eb482;
+}
+
+/* Section Headings */
+.section-heading {
+  font-family: 'Orbitron', Tahoma, Verdana, sans-serif;
+  background-color: rgb(160, 204, 255);
+  color: rgb(51, 51, 51);
+  padding: 0.3em 0.8em;
+}
+/* Main */
+
+li {
+  list-style: none; /* Remove default bullet */
+  position: relative;
+  padding-left: 1.5em; /* Make space for custom bullet */
+}
+
+li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.2em;
+  width: 0.8em;
+  height: 0.8em;
+  background: radial-gradient(circle, #0682b1, #0eb482);
+  border-radius: 50%;
+}
+
+
+/* Highlighted text */
+.highlight {
+  background-image: linear-gradient(to right, #f0f8ff, #e6f7ff);
+  font-style: italic;
+  background-color: lightpink;
+  font-weight: bold;
+}
+
+.standout {
+  background-color: yellow;
+  font-weight: bold;
+}
+
+section p::first-letter {
+  font-size: 200%;
+  color: red;
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* Footer */
+footer {
+  color: darkred;
+  font-size: 0.8rem;
+  font-style: italic;
+  text-align: center;
+  background-color: darkseagreen;
+}
+
+footer p {
+  margin: 0.1em;
+}

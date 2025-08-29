@@ -74,7 +74,6 @@ function buildIcecreamList() {
 
     const icecreams = icecreamSalesListJSON.icecreams;
     let tableHTML = `
-        <p class="text-center mt-4">The following table has been dynamically generated from JSON data:</p>
         <table class="table table-striped table-hover mt-4" id="sales-report-table">
             <thead class="bg-primary text-white">
                 <tr>
